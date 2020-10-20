@@ -63,7 +63,10 @@ this.listenForNewAssets();
 const region = Amplify._config.aws_project_region;
 this.setState({
   sources: [{
-      src: `https://${awsvideo.awsOutputVideo}/${item.video.id}/${item.video.id}.m3u8`,
+    //src: `https://${awsvideo.awsOutputVideo}/${item.video.id}/${item.video.id}.m3u8`,
+    //connect id asset: 6ca75736-de9d-41c9-90f4-b2c7e2988fc0
+    //waf id asset: ffe81f85-239a-4f9b-ba0b-b4b843b72ec6
+      src: `https://d1q6tudq1tepeh.cloudfront.net/${item.video.id}.m3u8`,
       type: 'application/x-mpegURL',
     }],
   displayingMovie: true,
